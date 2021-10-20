@@ -8,7 +8,7 @@ pipeline {
             steps {
                git branch: 'master',
                 credentialsId: 'GithuhSSH',
-                url: 'ssh://git@test.com/proj/test_proj.git'
+                url: 'ssh://git@github.com:soorajkg/demo.git'
                 sh "ls -lat"
             }
         }
