@@ -11,6 +11,7 @@ pipeline {
                 credentialsId: 'githubcred',
                 url: 'https://github.com/soorajkg/demo.git'
                 sh "ls -lat"
+                checkout scm
             }
         }
     }
