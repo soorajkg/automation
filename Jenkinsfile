@@ -6,6 +6,7 @@ pipeline {
    stages {
        stage('Code Checkout') {
             steps {
+               echo "In Code Checkout"
                git branch: 'master',
                 credentialsId: 'GithuhSSH',
                 url: 'ssh://git@github.com:soorajkg/demo.git'
