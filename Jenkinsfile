@@ -8,7 +8,7 @@ pipeline {
             steps {
                echo "In Code Checkout"
                git branch: 'main',
-                credentialsId: 'GithuhSSH',
+                credentialsId: 'githubpublickey',
                 url: 'git@github.com:soorajkg/demo.git'
                 sh "ls -lat"
             }
