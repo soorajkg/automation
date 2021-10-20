@@ -10,8 +10,9 @@ pipeline {
                git branch: 'main',
                 credentialsId: 'githubcred',
                 url: 'https://github.com/soorajkg/demo.git'
+                git pull
                 sh "ls -lat"
-                checkout scm
+               
             }
         }
     }
